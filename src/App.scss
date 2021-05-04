@@ -1,5 +1,30 @@
-.title-bar {
-  user-select: none;
-  -webkit-app-region: drag;
-  margin: 0;
+body,html {
+  background-color: rgb(32, 34, 37);
+}
+
+.header-titlebar {
+  display: flex;
+  
+  .header-app-title {
+    user-select: none;
+    -webkit-app-region: drag;
+    flex: 1;
+    margin: 0 0 0 6px;
+    font-size:x-large;
+    font-weight: 500;
+    color: rgb(114,118,125);
+  }
+  span:last-child {
+    &:hover{
+      background-color: lightcoral;
+    }
+  }
+  .titlebar-actions {
+    padding: 5px;
+    color: #c1c1c1;
+    &:hover{
+      background-color: rgb(72, 74, 77);
+      cursor: pointer;
+    }
+  }
 }

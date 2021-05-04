@@ -1,10 +1,10 @@
+
 import './App.scss';
+import Titlebar from './components/layout/Titlebar';
 
 function App() {
   return (
-    <header className="title-bar">
-        Personal Overlay
-    </header>
+    <Titlebar />
   );
 }
 
